@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2a80b3">
+        <EditText
+            android:id="@+id/r_username"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/username"
+            android:textColorHint="#fb7e7070"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/r_passWord"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/password"
+            android:textColorHint="#fb7e7070"
+            android:textSize="15sp"
+            android:inputType="numberPassword"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/r_register"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/quit"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#ced4d3"/>
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goback"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#ced4d3"/>
+    </RelativeLayout>
+</LinearLayout>

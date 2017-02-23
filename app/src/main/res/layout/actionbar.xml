@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a80b3">
+
+    <ImageView
+        android:id="@+id/zhifubao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zhifubao"/>
+    <TextView
+        android:id="@+id/homeAccount"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/zhifubao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homeAccount"
+        android:textSize="35sp"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:layout_below="@+id/zhifubao"/>
+
+</RelativeLayout>
